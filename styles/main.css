@@ -1,0 +1,145 @@
+/* variables */
+:root {
+  --primary_color: #a0f7ef;
+  font-size: 20px;
+}
+
+.page-header {
+  width: 5%;
+  padding: 10px 0px;
+}
+
+.footer {
+  background-color: rgb(125, 226, 166);
+  background-color: #00ff00;
+  background-color: var(--primary_color);
+  font-style: italic;
+  text-align: center;
+  /* 
+    Absolute
+    font-size: 16px
+    */
+  /* relatives: rem, em */
+  /* 1rem= 16px */
+  font-size: 1.5rem;
+  /* relativo a lo que haya en root */
+  /* 1. Border */
+  /* border: 2px solid red; */
+  /* border-radius: 10px; */
+  /* 2. Margin */
+  margin: 10px;
+  /* margin-top: 50px; */
+  /* margin top right bottom left: */
+  margin: 20px 10 px 0 5px;
+  /* margin: Y (top/bottom) X (right/left): */
+  margin: 0 20px;
+  margin: 20px 0 0 0;
+  /* 3. Paddings */
+  padding: 40px 0;
+  color: #ffffff;
+
+}
+
+/* las dos clases se ven afectadas: */
+.navbar,
+.footer {
+  background-color: var(--primary_color);
+  color: #ffffff;
+}
+
+/* afecta a la clase link que esté dentro de la clase navbar: */
+.navbar .link {
+  color: #ffffff;
+  /* ocultar link: */
+  /* visibility: hidden; */
+  /*display: none;*/
+}
+
+/* afecta a las img dentro de navbar */
+.navbar img {}
+
+/* afecta a las img con class logo dentro de navbar */
+nav.navbar img.logo {
+  width: 15%;
+  max-width: 80px;
+}
+
+.main-content {
+  background-color: goldenrod;
+  width: 100vw;
+  /* relativa al ancho del dispositivo */
+  height: 100vh;
+  /* relativa al largo del dispositivo */
+}
+
+/* todos los links sin underline */
+.link {
+  text-decoration: none;
+
+}
+
+/* flexbox example */
+.container {
+  background-color: blue;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.item {
+  background-color: red;
+  height: 80px;
+  width: 80px;
+  margin: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .menu {
+  display: flex;
+}
+
+.navbar .menu .link {
+  margin-left: 10px;
+}
+
+
+
+/* 0px             450px                 1200px    */
+/* |----------------------------------------->  */
+@media screen and (min-width: 576px) {
+  .navbar .menu {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .menu .link:hover {
+    color: red;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}

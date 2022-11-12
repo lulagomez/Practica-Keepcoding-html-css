@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lula Gomez</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    
+
+</head>
+
+
+
+<body>
+  <header class="page-header">
+    <img  src="/Lula-Gomez/media/gif cabecera.gif" width="150px" alt="gif cabecera"/>
+    <h1>Lula Gómez</h1>
+    
+  </header>
+ 
+<main>
+  
+  <a class="enlace" href="">Datos personales</a>
+  <a class="enlace" href="">¿Charlamos?</a>
+  <a class="enlace" href="">Escríbeme</a>
+
+  <p>Soy animadora de stop motion, hago cortos y animaciones, soy una ciencia lover, amo la música ochentera, el cine, los libros, la historia, y ahora estudio programación y estoy obsesionada con codear todo el día.</p>
+
+
+  <form action="registro-completado.html" method="post" novalidate>
+    <div>
+        <label for="name">name</label>
+        <input required type="text" name="name" id="name" placeholder="Añade tu nombre">
+    </div>
+    
+    <div>
+        <label for="email">email</label>
+        <input required type="email" name="email" id="email" placeholder="Añade tu email">
+    </div>
+    <div>
+        <label for="age">edad</label>
+        <input required type="number" name="age" id="age" min="18" max="100" placeholder="Añade tu edad"
+    </div>
+    <div>
+        <label for="phone">phone</label>
+        <input required type="tel" name="phone" id="phone" pattern="[0-9]+" placeholder="Añade sólo números">
+    </div>
+    <div>
+        <label for="password">password</label>
+        <input required type="password" name="password" id="password" placeholder="Añade tu contraseña">
+    </div>
+    
+    <fieldset>
+        <legend>¿Sobre qué quieres que charlemos?</legend>
+        <label for="programacion">Programación</label>
+        <input required type="radio" name="tema" id="programacion" value="programacion">
+        <label for="ciencia">Ciencia y naturaleza</label>
+        <input required type="radio" name="tema" id="ciencia" value="ciencia">
+        <label for="sectas">Sectas y magufadas</label>
+        <input required type="radio" name="tema" id="sectas" value="sectas">
+    </fieldset>
+    <label for="msj">Mensaje:</label>
+    <textarea required name="msj" id="msj" cols="30" rows="10" maxlength="180" ></textarea>
+    <input type="submit" value="Enviar">
+    
+</form>
+</main>
+
+<footer>
+  <nav>
+    <a href="" target="_blank">LinkedIn</a>
+    <a href="" target="_blank">GitHub</a>
+    <a href="" target="_blank">Twitter</a>
+    <a href="" target="_blank">Facebook</a>
+    <a href="" target="_blank">Instagram</a>
+  </nav>
+</footer>
+</body>
+</html>
