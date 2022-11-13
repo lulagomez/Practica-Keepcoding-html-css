@@ -15,7 +15,7 @@
 
   <div>
     <nav class="navbar-top">
-      <img class="logo" src="../Lula-Gomez/media/gif-cabecera.gif" alt="gif cabecera" />
+      <img class="logo" src="./media/gif-cabecera.gif" alt="gif cabecera" />
       <ul class="menu">
         <li>
           <a class="link" href="#skills">Mis skills</a>
@@ -75,54 +75,76 @@
       <h3 class="word">¡Escríbeme!</h3>
       <div class="container-inputs">
         <div class="container-inputs-ind">
-          <label for="name">name</label>
-          <input class="input_box" required type="text" name="name" id="name" placeholder="Añade tu nombre">
+          <div>
+            <label for="name">Nombre</label>
+            <input class="input_box" required type="text" name="name" id="name" placeholder="Añade tu nombre">
+          </div>
         </div>
         <div class="container-inputs-ind">
-          <label for="email">email</label>
-          <input class="input_box" required type="email" name="email" id="email" placeholder="Añade tu email">
+          <div>
+            <label for="email">Email</label>
+            <input class="input_box" required type="email" name="email" id="email" placeholder="Añade tu email">
+          </div>
+
         </div>
       </div>
       <div class="container-inputs">
         <div class="container-inputs-ind">
-          <label for="age">edad</label>
-          <input class="input_box" required type="number" name="age" id="age" min="18" max="100" placeholder="+ 18">
+          <div>
+            <label for="age">Edad</label>
+            <input class="input_box" required type="number" name="age" id="age" min="18" max="100" placeholder="+ 18">
+          </div>
         </div>
         <div class="container-inputs-ind">
-          <label for="instagram">Github username</label>
-          <input class="input_box" type="text" name="instagram" id="instagram" placeholder="@username" pattern="^@[^\s]+">
+          <div>
+            <label for="instagram">Github</label>
+            <input class="input_box" type="text" name="instagram" id="instagram" placeholder="@username"
+              pattern="^@[^\s]+">
+          </div>
+
         </div>
       </div>
 
-    
-        <fieldset>
-          <legend class="word">¿Sobre qué quieres que charlemos?</legend>
-          <div class="container-charla">
-          <label for="programacion">Programación</label>
-          <input required type="radio" name="tema" id="programacion" value="programacion">
-          <label for="ciencia">Ciencia y naturaleza</label>
-          <input required type="radio" name="tema" id="ciencia" value="ciencia">
-          <label for="sectas">Sectas y magufadas</label>
-          <input required type="radio" name="tema" id="sectas" value="sectas">
+
+      <fieldset>
+        <legend class="word">¿Sobre qué quieres que charlemos?</legend>
+        <div class="container-charla">
+          <div>
+            <input required type="radio" name="tema" id="programacion" value="programacion">
+            <label for="programacion">Programación</label>
+          </div>
+          <div>
+            <input required type="radio" name="tema" id="ciencia" value="ciencia">
+            <label for="ciencia">Ciencia y naturaleza</label>
+          </div>
+          <div>
+            <input required type="radio" name="tema" id="sectas" value="sectas">
+            <label for="sectas">Sectas y magufadas</label>
+          </div>
+  
         </div>
-        </fieldset>
-        <div class="container-msj">
+      </fieldset>
+      <div class="container-msj">
         <label for="msj">Mensaje:</label>
         <textarea class="cubo-msj" required name="msj" id="msj" cols="30" rows="3" maxlength="180"></textarea>
         <input class="submit" type="submit" value="Enviar">
 
-        </div>
-      
+      </div>
+
 
     </form>
   </main>
 
   <footer class="footer">
     <nav class="container-links-footer">
-      <a class="link-icon" href="https://www.linkedin.com/in/lulagomez/" target="_blank"><img src="./social-media-icons/linkedin icon.png" alt=""></a>
-      <a class="link-icon" href="https://github.com/lulagomez" target="_blank"><img src="./social-media-icons/github.png" alt=""></a>
-      <a class="link-icon" href="https://twitter.com/lulagomezfem" target="_blank"><img src="./social-media-icons/twitter icon.png" alt=""></a>
-      <a class="link-icon" href="https://www.instagram.com/lulagomezfem/" target="_blank"><img src="./social-media-icons/instagram icon.png" alt=""></a>
+      <a class="link-icon" href="https://www.linkedin.com/in/lulagomez/" target="_blank"><img
+          src="./social-media-icons/linkedin icon.png" alt=""></a>
+      <a class="link-icon" href="https://github.com/lulagomez" target="_blank"><img
+          src="./social-media-icons/github.png" alt=""></a>
+      <a class="link-icon" href="https://twitter.com/lulagomezfem" target="_blank"><img
+          src="./social-media-icons/twitter icon.png" alt=""></a>
+      <a class="link-icon" href="https://www.instagram.com/lulagomezfem/" target="_blank"><img
+          src="./social-media-icons/instagram icon.png" alt=""></a>
     </nav>
   </footer>
 </body>

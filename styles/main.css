@@ -6,6 +6,7 @@
 body {
   background-color: var(--primary_color);
   font-family: "Kanit", sans-serif;
+  color: var(--font_color);
 
   /*display: grid;
   grid-template-rows: 10% 15% 15% 20% 10% 10% 15% 5%;
@@ -216,7 +217,8 @@ label {
   color: var(--primary_color);
   display: flex;
   margin: 10px;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
   
