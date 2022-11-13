@@ -258,7 +258,7 @@ label {
 
 .cubo-msj {
   display: flex;
-  
+
   background-color: var(--primary_color);
   border: 0;
   margin-bottom: 10px;
@@ -270,4 +270,23 @@ label {
   border: 0;
   border-radius: 5px;
   color: var(--font_color);
+}
+
+.footer{
+  padding: 20px;
+}
+.container-links-footer {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.link-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  display: flex;
+  text-decoration: none;
+
 }
