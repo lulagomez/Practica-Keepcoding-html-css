@@ -63,8 +63,9 @@ body {
 .navbar-top img {
   width: 20%;
   min-width: 100px;
-  max-width: 90vw;
+  max-width: 150px;
 }
+
 
 .header {
   background: center center url(../media/5896584.jpg  ) no-repeat;

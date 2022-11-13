@@ -15,16 +15,16 @@
 
   <div>
     <nav class="navbar-top">
-      <img class="logo" src="./media/gif-cabecera.gif" alt="gif cabecera" />
+      <img src="./media/gif-cabecera.gif" alt="gif cabecera" />
       <ul class="menu">
         <li>
           <a class="link" href="#skills">Mis skills</a>
         </li>
         <li>
-          <a class="link" href="#">¿Charlamos?</a>
+          <a class="link" href="#charlamos">¿Charlamos?</a>
         </li>
         <li>
-          <a class="link" href="#">Escríbeme</a>
+          <a class="link" href="#escribeme">Escríbeme</a>
         </li>
 
     </nav>
@@ -71,8 +71,8 @@
     </div>
     </div>
 
-    <form action="registro-completado.html" method="post" novalidate>
-      <h3 class="word">¡Escríbeme!</h3>
+    <form action="registro-completado.html"  id="escribeme">
+      <h3  class="word">¡Escríbeme!</h3>
       <div class="container-inputs">
         <div class="container-inputs-ind">
           <div>
@@ -107,7 +107,7 @@
 
 
       <fieldset>
-        <legend class="word">¿Sobre qué quieres que charlemos?</legend>
+        <legend id="charlamos" class="word">¿Sobre qué quieres que charlemos?</legend>
         <div class="container-charla">
           <div>
             <input required type="radio" name="tema" id="programacion" value="programacion">
