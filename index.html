@@ -15,10 +15,10 @@
 
   <div>
     <nav class="navbar-top">
-      <img class="logo" src="/Lula-Gomez/media/gif cabecera.gif" alt="gif cabecera" />
+      <img class="logo" src="../Lula-Gomez/media/gif-cabecera.gif" alt="gif cabecera" />
       <ul class="menu">
         <li>
-          <a class="link" href="#">Tus datos</a>
+          <a class="link" href="#skills">Mis skills</a>
         </li>
         <li>
           <a class="link" href="#">¿Charlamos?</a>
@@ -42,7 +42,7 @@
       <p>y estoy obsesionada con codear todo el día.</p>
     </div>
 
-    <div class="container-skills">
+    <div class="container-skills" id="skills">
 
       <div>
         <h3 class="word">My skills</h3>
@@ -72,45 +72,54 @@
     </div>
 
     <form action="registro-completado.html" method="post" novalidate>
-      <div>
-        <label for="name">name</label>
-        <input class="input_box" required type="text" name="name" id="name" placeholder="Añade tu nombre">
-      </div>
-
-      <div>
-        <label for="email">email</label>
-        <input class="input_box" required type="email" name="email" id="email" placeholder="Añade tu email">
-      </div>
-      <div>
-        <label for="age">edad</label>
-        <input class="input_box" required type="number" name="age" id="age" min="18" max="100"
-          placeholder="Añade tu edad" </div>
-        <div>
-          <label for="phone">phone</label>
-          <input class="input_box" required type="tel" name="phone" id="phone" pattern="[0-9]+"
-            placeholder="Añade sólo números">
+      <h3 class="word">¡Escríbeme!</h3>
+      <div class="container-inputs">
+        <div class="container-inputs-ind">
+          <label for="name">name</label>
+          <input class="input_box" required type="text" name="name" id="name" placeholder="Añade tu nombre">
         </div>
+        <div class="container-inputs-ind">
+          <label for="email">email</label>
+          <input class="input_box" required type="email" name="email" id="email" placeholder="Añade tu email">
+        </div>
+      </div>
+      <div class="container-inputs">
+        <div class="container-inputs-ind">
+          <label for="age">edad</label>
+          <input class="input_box" required type="number" name="age" id="age" min="18" max="100" placeholder="+ 18">
+        </div>
+        <div class="container-inputs-ind">
+          <label for="instagram">Github username</label>
+          <input class="input_box" type="text" name="instagram" id="instagram" placeholder="@username" pattern="^@[^\s]+">
+        </div>
+      </div>
 
-
+    
         <fieldset>
-          <legend>¿Sobre qué quieres que charlemos?</legend>
+          <legend class="word">¿Sobre qué quieres que charlemos?</legend>
+          <div class="container-charla">
           <label for="programacion">Programación</label>
           <input required type="radio" name="tema" id="programacion" value="programacion">
           <label for="ciencia">Ciencia y naturaleza</label>
           <input required type="radio" name="tema" id="ciencia" value="ciencia">
           <label for="sectas">Sectas y magufadas</label>
           <input required type="radio" name="tema" id="sectas" value="sectas">
+        </div>
         </fieldset>
+        <div class="container-msj">
         <label for="msj">Mensaje:</label>
-        <textarea required name="msj" id="msj" cols="30" rows="10" maxlength="180"></textarea>
-        <input type="submit" value="Enviar">
+        <textarea class="cubo-msj" required name="msj" id="msj" cols="30" rows="3" maxlength="180"></textarea>
+        <input class="submit" type="submit" value="Enviar">
+
+        </div>
+      
 
     </form>
   </main>
 
   <footer class="footer">
     <nav>
-      <a href="" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/lulagomez/" target="_blank">LinkedIn</a>
       <a href="" target="_blank">GitHub</a>
       <a href="" target="_blank">Twitter</a>
       <a href="" target="_blank">Facebook</a>

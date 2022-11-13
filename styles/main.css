@@ -66,7 +66,7 @@ body {
 }
 
 .header {
-  background: center center url(/Lula-Gomez/media/5896584.jpg) no-repeat;
+  background: center center url(../media/5896584.jpg  ) no-repeat;
   height: 200px;
   width: 100%;
   border-radius: 30px;
@@ -139,7 +139,7 @@ body {
   padding: 0 5px;
   display: flex;
   height: 20px;
-  width: 500px;
+  width: 80vw;
 }
 
 .progress-value-animation {
@@ -205,20 +205,69 @@ body {
   }
 }
 
+label {
+  padding: 5px;
+}
 
-
-
-
-
-
-
-
-
-
+.container-inputs {
+  background-color: rgb(227, 162, 21);
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--primary_color);
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
 
 
 .input_box {
-  background-color: rgb(241, 171, 50);
+  background-color: var(--primary_color);
   border: 0px;
   border-radius: 5px;
+  width: 110px;
+  
+}
+
+.container-charla {
+  background-color: rgb(227, 107, 21);
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--primary_color);
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  
+  
+}
+.container-msj {
+  background-color: rgb(233, 77, 63);
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--primary_color);
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.cubo-msj {
+  display: flex;
+  
+  background-color: var(--primary_color);
+  border: 0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: var(--font_color);
+}
+.submit {
+  background-color: var(--primary_color);
+  border: 0;
+  border-radius: 5px;
+  color: var(--font_color);
 }
