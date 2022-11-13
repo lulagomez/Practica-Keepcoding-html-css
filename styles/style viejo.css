@@ -1,0 +1,226 @@
+/* variables */
+:root {
+    --primary_color: rgb(199, 236, 224);
+    --font_type:
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(199, 236, 224);
+    width: 100%;
+    padding: 10px 0px;
+}
+
+body {
+    background-color: var(--primary_color);
+    font-family: "Kanit", sans-serif;
+
+    display: grid;
+    grid-template-rows: 10% 15% 15% 20% 10% 10% 15% 5%;
+    gap: 0.5%;
+    grid-template-areas:
+        "navbar"
+        "header"
+        "text"
+        "skills"
+        "datos"
+        "charla"
+        "mensaje"
+        "footer"
+    ;
+}
+
+navbar .barras-skill {
+    background-color: aliceblue;
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.word {
+    padding: 0 0 5px 0;
+}
+
+
+@keyframes test {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100;
+    }
+}
+
+.barra-animation {
+    background-color: #d58036;
+    width: 70%;
+    height: 25px;
+    border-radius: 8px;
+    animation: test 4s;
+}
+
+@keyframes test {
+    0% {
+        opacity: 50;
+        background-color: aquamarine;
+        width: 20%;
+    }
+
+    100% {
+        opacity: 100;
+        background-color: #f2337f;
+        width: 100%;
+    }
+}
+
+.container {
+    animation: test 4s infinite ease-in-out;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+
+
+.footer {
+    text-align: center;
+    /* 
+      Absolute
+      font-size: 16px
+      */
+    /* relatives: rem, em */
+    /* 1rem= 16px */
+    font-size: 1.5rem;
+    /* ^ relativo a lo que haya en root */
+    /* 1. Border */
+
+    /* border: 8px solid red; 
+    border-radius: 10px; */
+    /* 2. Margin */
+    margin: 10px;
+    /* margin-top: 50px; */
+    /* margin top right bottom left: */
+    margin: 20px 10px 0 5px;
+    /* margin: Y (top/bottom) X (right/left): */
+    margin: 0 20px;
+    margin: 20px 0 0 0;
+    /* 3. Paddings */
+    padding: 100px 0;
+
+
+}
+
+/* las dos clases se ven afectadas: */
+.navbar,
+.footer {
+    background-color: var(--primary_color);
+    color: #ffffff;
+}
+
+/* afecta a la clase link que esté dentro de la clase navbar: */
+/*
+  .navbar .link {
+    color: #362828;
+    */
+/* ocultar link: */
+/* visibility: hidden; */
+/*display: none;*/
+}
+
+/* afecta a las img dentro de navbar */
+/*
+  .navbar img {
+    width: 15%;
+    min-width: 100px;
+    max-width: 200px;
+  }
+  */
+
+
+
+.main-content {
+    background-color: goldenrod;
+    width: 100vw;
+    /* relativa al ancho del dispositivo */
+    height: 100vh;
+    /* relativa al largo del dispositivo */
+}
+
+/*
+  .input_box {
+    background-color: rgb(245, 254, 251);
+    border: 0px;
+    border-radius: 5px;
+  }
+  */
+
+/* todos los links sin underline */
+/*.link {
+    text-decoration: none;
+  
+  }*/
+
+/* flexbox example */
+/*
+  .container {
+  
+    display: flex;
+    margin: 10px;
+    justify-content: flex-start;
+    align-items: center;
+  
+  }
+  
+  .item {
+    background-color: red;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+  }
+  */
+
+/* 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  */
+
+/*
+  .navbar .menu {
+    display: none;
+  }
+  */
+
+/*
+  .navbar .menu .link {
+    margin-left: 10px;
+    background-color: #ffffff;
+  
+    border-radius: 3px;
+  }
+  */
+
+
+
+
+/* 0px             450px                 1200px    */
+/* |----------------------------------------->  */
+@media screen and (min-width: 576px) {
+    .navbar .menu {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar .menu .link {
+        transition: color 0.3s linear;
+    }
+
+    .navbar .menu .link:hover {
+        color: #f2337f;
+    }
+
+}

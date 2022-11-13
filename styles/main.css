@@ -1,145 +1,224 @@
-/* variables */
 :root {
-  --primary_color: #a0f7ef;
-  font-size: 20px;
+  --primary_color: rgb(248, 244, 234);
+  --font_color: #4d270f;
 }
 
-.page-header {
-  width: 5%;
-  padding: 10px 0px;
-}
-
-.footer {
-  background-color: rgb(125, 226, 166);
-  background-color: #00ff00;
+body {
   background-color: var(--primary_color);
-  font-style: italic;
-  text-align: center;
-  /* 
-    Absolute
-    font-size: 16px
+  font-family: "Kanit", sans-serif;
+
+  /*display: grid;
+  grid-template-rows: 10% 15% 15% 20% 10% 10% 15% 5%;
+  gap: 0.5%;
+  grid-template-areas:
+    "navbar"
+    "header"
+    "text"
+    "skills"
+    "datos"
+    "charla"
+    "mensaje"
+    "footer";
     */
-  /* relatives: rem, em */
-  /* 1rem= 16px */
-  font-size: 1.5rem;
-  /* relativo a lo que haya en root */
-  /* 1. Border */
-  /* border: 2px solid red; */
-  /* border-radius: 10px; */
-  /* 2. Margin */
-  margin: 10px;
-  /* margin-top: 50px; */
-  /* margin top right bottom left: */
-  margin: 20px 10 px 0 5px;
-  /* margin: Y (top/bottom) X (right/left): */
-  margin: 0 20px;
-  margin: 20px 0 0 0;
-  /* 3. Paddings */
-  padding: 40px 0;
-  color: #ffffff;
-
 }
 
-/* las dos clases se ven afectadas: */
-.navbar,
-.footer {
-  background-color: var(--primary_color);
-  color: #ffffff;
-}
-
-/* afecta a la clase link que esté dentro de la clase navbar: */
-.navbar .link {
-  color: #ffffff;
-  /* ocultar link: */
-  /* visibility: hidden; */
-  /*display: none;*/
-}
-
-/* afecta a las img dentro de navbar */
-.navbar img {}
-
-/* afecta a las img con class logo dentro de navbar */
-nav.navbar img.logo {
-  width: 15%;
-  max-width: 80px;
-}
-
-.main-content {
-  background-color: goldenrod;
-  width: 100vw;
-  /* relativa al ancho del dispositivo */
-  height: 100vh;
-  /* relativa al largo del dispositivo */
-}
-
-/* todos los links sin underline */
-.link {
-  text-decoration: none;
-
-}
-
-/* flexbox example */
-.container {
-  background-color: blue;
-  width: 100%;
-  height: 60vh;
-  display: flex;
-  justify-content: start;
-  align-items: flex-end;
-  flex-wrap: wrap;
-}
-
-.item {
-  background-color: red;
-  height: 80px;
-  width: 80px;
-  margin: 20px;
-}
-
-.navbar {
+.navbar-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /*grid-area: footer;*/
 }
 
-.navbar .menu {
+.navbar-top .menu {
   display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+  display: none;
 }
 
-.navbar .menu .link {
+.navbar-top .menu .link {
   margin-left: 10px;
+  color: #4d270f;
+
+
 }
 
-
-
-/* 0px             450px                 1200px    */
-/* |----------------------------------------->  */
 @media screen and (min-width: 576px) {
-  .navbar .menu {
+  .navbar-top .menu {
     display: flex;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .navbar .menu .link:hover {
-    color: red;
+  .navbar-top .menu .link {
+    transition: color 0.3s linear;
+  }
+
+  .navbar-top .menu .link:hover {
+    color: #f2337f;
   }
 }
 
-/* X-Small devices (portrait phones, less than 576px) */
-/* No media query for `xs` since this is the default in Bootstrap */
+.navbar-top img {
+  width: 20%;
+  min-width: 100px;
+  max-width: 90vw;
+}
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
+.header {
+  background: center center url(/Lula-Gomez/media/5896584.jpg) no-repeat;
+  height: 200px;
+  width: 100%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: var(--primary_color);
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-weight: 400;
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+}
 
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
 
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {}
+.link {
+  text-decoration: none;
+
+}
+
+.word {
+  padding: 4px;
+}
+
+.container {
+  display: flex;
+  margin: 10px;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.container-texto {
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+
+}
+
+.container-skills {
+  background-color: rgb(81, 142, 171);
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--primary_color);
+  display: flex;
+  margin: 10px;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+
+
+
+.barra {
+  justify-content: flex-start;
+  display: flex;
+  padding: 10px;
+  margin: 0;
+}
+
+.progress {
+  padding: 10px;
+  background: rgba(248, 246, 241, 0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 20px;
+  width: 500px;
+}
+
+.progress-value-animation {
+  animation: load-animation 3s infinite;
+
+  border-radius: 100px;
+  background: rgb(227, 162, 21);
+  height: 20px;
+  width: 0;
+}
+
+@keyframes load-animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.progress-value-logic {
+  animation: load-logic 3s infinite;
+
+  border-radius: 100px;
+  background: rgb(227, 162, 21);
+  height: 20px;
+  width: 0;
+}
+
+@keyframes load-logic {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 50%;
+  }
+  50% {
+    width: 30%;
+  }
+  60% {
+    width: 40%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+.progress-value-twerking {
+  animation: load-twerking 3s infinite;
+
+  border-radius: 100px;
+  background: rgb(227, 162, 21);
+  height: 20px;
+  width: 0;
+}
+
+@keyframes load-twerking {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 5%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.input_box {
+  background-color: rgb(241, 171, 50);
+  border: 0px;
+  border-radius: 5px;
+}
